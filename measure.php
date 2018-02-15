@@ -1,24 +1,7 @@
 <?php
-include 'inc/autoload.inc';
-?>
-
-<?php
 
 
-class Measure {
-
-    public $temperature;
-    public $humidity;
-    public $datetime;
-    public function __construct($temperature, $humidity, $datetime)
-    {
-        $this->humidity;
-        $this->temperature;
-        $this->datetime;
-    }
-}
-
-$config = include 'inc/config.inc';
+$config = include 'inc/config.inc.php';
 
 if (!empty($_POST)) {
 
@@ -43,7 +26,7 @@ if (!empty($_POST)) {
 
     	<h1>Test relevé de mesures</h1>
 
-        <?php echo "Température : " .$measure[$temperature]?></br/>
-        <?php echo "Humidité : " .$measure[$humitity]?>
+        <?php echo "Température : " .$measure[temperature]?></br/>
+        <?php echo "Humidité : " .$measure[humitity]?>
     </body>
 </html>
